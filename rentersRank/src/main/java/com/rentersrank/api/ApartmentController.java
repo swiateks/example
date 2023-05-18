@@ -24,7 +24,7 @@ import com.rentersrank.service.ApartmentServiceImpl;
 @RestController
 @RequestMapping(value = "/apartment")
 @Validated
-public class ApartmentAPI {
+public class ApartmentController {
 
 	@Autowired
 	private ApartmentServiceImpl apartmentService;

@@ -26,7 +26,7 @@ import com.rentersrank.service.LandlordService;
 @RestController
 @RequestMapping(value = "/landlord")
 @Validated
-public class LandlordAPI {
+public class LandlordController {
 	@Autowired
 	private LandlordService landlordService;
 	

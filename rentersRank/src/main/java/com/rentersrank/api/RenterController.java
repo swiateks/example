@@ -35,7 +35,7 @@ import com.rentersrank.service.RenterService;
 @RestController 
 @RequestMapping(value = "/renter")
 @Validated
-public class RenterAPI {
+public class RenterController {
 	@Autowired
 	private Environment environment;
 	@Autowired

@@ -31,6 +31,7 @@ import com.rentersrank.validator.EventValidator;
 @Validated
 @PropertySource("classpath:UserMessages.properties")
 public class RenterServiceImpl implements RenterService {
+	
 	@Autowired
 	private RenterRepository renterRepository;
 	@Autowired

@@ -60,9 +60,9 @@ public class LandlordDTO {
 	
 	public static Landlord prepareEntity(LandlordDTO landLordDTO) {
 		Landlord landLord = new Landlord();
-		landLord.setLandlordId(landLordDTO.getLandLordId());
-		landLord.setName(landLordDTO.getName());
-		landLord.setEmailId(landLordDTO.getEmailId());
+//		landLord.setLandlordId(landLordDTO.getLandLordId());
+//		landLord.setName(landLordDTO.getName());
+//		landLord.setEmailId(landLordDTO.getEmailId());
 		Set<Apartment> apartments = new HashSet(); 
 		for(ApartmentDTO a : landLordDTO.getApartments()) {
 			apartments.add(ApartmentDTO.prepareEntity(a));
@@ -73,9 +73,9 @@ public class LandlordDTO {
 	
 	public static LandlordDTO prepareDTO(Landlord landLord) {
 		LandlordDTO landLordDTO = new LandlordDTO();
-		landLordDTO.setLandLordId(landLord.getLandlordId());
-		landLordDTO.setName(landLord.getName());
-		landLordDTO.setEmailId(landLord.getEmailId());
+//		landLordDTO.setLandLordId(landLord.getLandlordId());
+//		landLordDTO.setName(landLord.getName());
+//		landLordDTO.setEmailId(landLord.getEmailId());
 		List<ApartmentDTO> apartmentDTOs = new LinkedList<>();
 		if(!landLord.getApartments().isEmpty()) {
 			for(Apartment a : landLord.getApartments()) {

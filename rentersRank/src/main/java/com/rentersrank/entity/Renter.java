@@ -1,5 +1,6 @@
 package com.rentersrank.entity;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import javax.persistence.CascadeType;
@@ -18,7 +19,9 @@ import javax.persistence.TableGenerator;
 import com.rentersrank.dto.RenterDTO;
 
 @Entity
-public class Renter {
+public class Renter 
+//extends User implements Serializable 
+{
 	@Id
 	@GeneratedValue(generator="pkgen",strategy=GenerationType.TABLE)
 	@TableGenerator(
@@ -31,8 +34,11 @@ public class Renter {
             allocationSize=1
             )
 	private Integer renterId;
+	
 	private String name;
+	
 	private String emailId;
+	
 	@Column(name="moveIn_date")
 	private LocalDate move_inDate;
 	@Column(name="moveOut_date")
@@ -54,7 +60,6 @@ public class Renter {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	public String getEmailId() {
 		return emailId;
 	}
@@ -78,10 +83,6 @@ public class Renter {
 	}
 	public void setApartmentId(Integer apartmentId) {
 		this.apartmentId = apartmentId;
-	}
-	@Override
-	public String toString() {
-		return "Renter [renterId=" + renterId + ", name=" + name + "]";
 	}
 
 }

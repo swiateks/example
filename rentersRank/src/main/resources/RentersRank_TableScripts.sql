@@ -1,7 +1,7 @@
 DROP SCHEMA IF EXISTS renters_rank_db;
 
 CREATE SCHEMA renters_rank_db;
-USE renters_rank_db
+USE renters_rank_db;
 
 CREATE TABLE apartment (
 	apartment_id INT PRIMARY KEY,
@@ -27,6 +27,11 @@ CREATE TABLE Renter (
 	moveOut_date DATE NOT NULL
 );
 
+CREATE TABLE User (
+	username VARCHAR(50) NOT NULL UNIQUE,
+	password VARCHAR(100) NOT NULL,
+	role VARCHAR(50) NOT NULL
+);
 
 INSERT INTO LandLord (landLord_id, name, email_id) VALUES(100, "Frajer", "frajer@gmail.com");
 

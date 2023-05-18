@@ -79,9 +79,9 @@ public class RenterDTO {
 
 	public static RenterDTO prepareDTO(Renter renter) {
 		RenterDTO renterDTO = new RenterDTO();
-		renterDTO.setRenterId(renter.getRenterId());
-		renterDTO.setName(renter.getName());
-		renterDTO.setEmailId(renter.getEmailId());
+//		renterDTO.setRenterId(renter.getRenterId());
+//		renterDTO.setName(renter.getName());
+//		renterDTO.setEmailId(renter.getEmailId());
 		renterDTO.setMove_inDate(renter.getMove_inDate());
 		renterDTO.setMove_outDate(renter.getMove_outDate());
 //		ApartmentDTO apartmentDTO = ApartmentDTO.prepareDTO(renter.getApartment());
@@ -91,9 +91,9 @@ public class RenterDTO {
 	
 	public static Renter populateEntity(RenterDTO renterDTO) {
 		Renter renter = new Renter();
-		renter.setRenterId(renterDTO.getRenterId());
-		renter.setName(renterDTO.getName());
-		renter.setEmailId(renterDTO.getEmailId());
+//		renter.setRenterId(renterDTO.getRenterId());
+//		renter.setName(renterDTO.getName());
+//		renter.setEmailId(renterDTO.getEmailId());
 		renter.setMove_inDate(renterDTO.getMove_inDate());
 		renter.setMove_outDate(renterDTO.getMove_outDate());
 //		Apartment apartment = new Apartment();
