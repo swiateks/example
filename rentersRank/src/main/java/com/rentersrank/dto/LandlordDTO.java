@@ -15,7 +15,7 @@ import javax.validation.constraints.Pattern;
 
 import com.rentersrank.entity.Apartment;
 import com.rentersrank.entity.Landlord;
-import com.rentersrank.validator.EventValidator;
+import com.rentersrank.validator.Validator;
 
 
 public class LandlordDTO {

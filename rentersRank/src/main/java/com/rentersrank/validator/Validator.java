@@ -7,9 +7,9 @@ import org.w3c.dom.events.EventException;
 import com.rentersrank.dto.*;
 import com.rentersrank.exception.RentersRankException;
 
-public class EventValidator {
+public class Validator {
 
-	private EventValidator() {
+	private Validator() {
 		
 	}
 	

@@ -23,7 +23,7 @@ import com.rentersrank.repository.ApartmentRepository;
 import com.rentersrank.repository.LandlordRepository;
 import com.rentersrank.repository.RenterRepository;
 import com.rentersrank.utility.RenterRankPopups;
-import com.rentersrank.validator.EventValidator;
+import com.rentersrank.validator.Validator;
 
 
 @Service(value="eventServiceImpl")
